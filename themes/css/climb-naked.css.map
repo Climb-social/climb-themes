@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEI,sBAAY;EACR,gBAAgB,EAAE,KAAK",
+"sources": ["../sass/climb-naked.scss"],
+"names": [],
+"file": "climb-naked.css"
+}

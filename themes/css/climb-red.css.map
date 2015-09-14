@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEI,sBAAY;EACR,gBAAgB,EAAE,GAAG",
+"sources": ["../sass/climb-red.scss"],
+"names": [],
+"file": "climb-red.css"
+}
