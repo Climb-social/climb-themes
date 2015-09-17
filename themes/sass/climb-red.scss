@@ -1,6 +1,119 @@
-climb-wall {
+@import "vars";
 
-    climb-naked {
-        background-color: red;
+.climb-wall.climb-red {
+
+    .climb__tile {
+        background-color: $white;
+        margin: 0;
+    }
+
+    .climb__tile {
+        .climb__tile__content {
+            transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            background-color: transparent;
+            border: 1px solid #f2f2f2;
+            border-right: none;
+            border-top: none;
+        }
+
+
+        &:hover .climb__tile__content {
+            background-color: $red;
+
+            color: $white;
+
+            a {
+                color: #ffcccc;
+            }
+        }
+    }
+
+
+    .climb__tile--with-image {
+
+        .climb__tile__content {
+            background-color: transparent;
+            color: $white;
+        }
+
+        &:hover .climb__tile__content {
+            background-color: fadeout($red, 10%);
+        }
+
+        .should-hide {
+            opacity: 0;
+        }
+
+        &:hover .should-hide {
+            opacity: 1;
+        }
+
+        &:hover .climb__tile__image {
+            transform: scale(1.1);
+        }
+    }
+
+    .climb__tile__content {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+
+        font-size: 1.4em;
+    }
+
+
+    .climb__tile__media {
+        width: auto;
+        top: 50%;
+        margin-top: -50%;
+        left: 50%;
+        margin-left: -75%;
+        min-height: 100%;
+    }
+
+    .climb__tile__message {
+        display: block;
+        margin: 32px;
+        max-height: 53%;
+        overflow: hidden;
+        @extend .font-book;
+        line-height: 1.14;
+        color: $grey;
+        font-size: 16px;
+        a {
+            color: $red;
+        }
+
+    }
+
+    .climb__tile__meta {
+        position: absolute;
+        bottom: 0;
+        margin: 0 32px 32px;
+        right: 0;
+        left: 0;
+
+        line-height: 1;
+    }
+
+    .climb__tile__meta_ts {
+        font-size: 12px;
+        margin: 5px 0 0;
+        display: block;
+    }
+
+    .climb__tile__meta__source-icon {
+        float: right;
+        font-size: 2em;
+    }
+
+    .climb__tile__meta__author {
+       margin: 0;
+       display: block;
+
+       @extend .font-heavy;
+       color: $red;
+       font-size: 0.72em;
     }
 }

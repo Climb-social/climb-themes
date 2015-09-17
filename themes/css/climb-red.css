@@ -1,4 +1,87 @@
-climb-wall climb-naked {
-  background-color: red; }
+.font-book, .climb-wall.climb-red .climb__tile__message {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 400; }
+
+.font-heavy, .climb-wall.climb-red .climb__tile__meta__author {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 700; }
+
+.clearfix {
+  zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: "";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+.climb-wall.climb-red .climb__tile {
+  background-color: white;
+  margin: 0; }
+.climb-wall.climb-red .climb__tile .climb__tile__content {
+  transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background-color: transparent;
+  border: 1px solid #f2f2f2;
+  border-right: none;
+  border-top: none; }
+.climb-wall.climb-red .climb__tile:hover .climb__tile__content {
+  background-color: #BB211E;
+  color: white; }
+  .climb-wall.climb-red .climb__tile:hover .climb__tile__content a {
+    color: #ffcccc; }
+.climb-wall.climb-red .climb__tile--with-image .climb__tile__content {
+  background-color: transparent;
+  color: white; }
+.climb-wall.climb-red .climb__tile--with-image:hover .climb__tile__content {
+  background-color: fadeout(#BB211E, 10%); }
+.climb-wall.climb-red .climb__tile--with-image .should-hide {
+  opacity: 0; }
+.climb-wall.climb-red .climb__tile--with-image:hover .should-hide {
+  opacity: 1; }
+.climb-wall.climb-red .climb__tile--with-image:hover .climb__tile__image {
+  transform: scale(1.1); }
+.climb-wall.climb-red .climb__tile__content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  font-size: 1.4em; }
+.climb-wall.climb-red .climb__tile__media {
+  width: auto;
+  top: 50%;
+  margin-top: -50%;
+  left: 50%;
+  margin-left: -75%;
+  min-height: 100%; }
+.climb-wall.climb-red .climb__tile__message {
+  display: block;
+  margin: 32px;
+  max-height: 53%;
+  overflow: hidden;
+  line-height: 1.14;
+  color: #CBCBCB;
+  font-size: 16px; }
+  .climb-wall.climb-red .climb__tile__message a {
+    color: #BB211E; }
+.climb-wall.climb-red .climb__tile__meta {
+  position: absolute;
+  bottom: 0;
+  margin: 0 32px 32px;
+  right: 0;
+  left: 0;
+  line-height: 1; }
+.climb-wall.climb-red .climb__tile__meta_ts {
+  font-size: 12px;
+  margin: 5px 0 0;
+  display: block; }
+.climb-wall.climb-red .climb__tile__meta__source-icon {
+  float: right;
+  font-size: 2em; }
+.climb-wall.climb-red .climb__tile__meta__author {
+  margin: 0;
+  display: block;
+  color: #BB211E;
+  font-size: 0.72em; }
 
 /*# sourceMappingURL=climb-red.css.map */

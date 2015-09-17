@@ -1,0 +1,19 @@
+.font-book {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 400; }
+
+.font-heavy {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 700; }
+
+.clearfix {
+  zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: "";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+/*# sourceMappingURL=vars.css.map */
