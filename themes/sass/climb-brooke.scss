@@ -1,0 +1,24 @@
+.climb-brooke {
+    background-color: orange;
+    font-family: brandon-grotesque,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    .climb__tile {
+        padding-bottom: 0;
+        background-color: white;
+        border-radius: 5px;
+    }
+    .climb__tile__media {
+        position: relative;
+    }
+    .climb__tile__content {
+        line-height: 1.5;
+        height: auto;
+        position: relative;
+        color: grey;
+        a {
+            color: orange;
+        }
+    }
+    .climb__title__author {
+
+    }
+}

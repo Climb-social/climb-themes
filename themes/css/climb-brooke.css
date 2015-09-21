@@ -1,0 +1,18 @@
+.climb-brooke {
+  background-color: orange;
+  font-family: brandon-grotesque,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif; }
+  .climb-brooke .climb__tile {
+    padding-bottom: 0;
+    background-color: white;
+    border-radius: 5px; }
+  .climb-brooke .climb__tile__media {
+    position: relative; }
+  .climb-brooke .climb__tile__content {
+    line-height: 1.5;
+    height: auto;
+    position: relative;
+    color: grey; }
+    .climb-brooke .climb__tile__content a {
+      color: orange; }
+
+/*# sourceMappingURL=climb-brooke.css.map */
