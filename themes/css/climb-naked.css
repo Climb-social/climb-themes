@@ -42,7 +42,7 @@
 .climb__tile__message {
   z-index: 1; }
 
-climb-wall climb-naked {
+.climb-wall .climb-naked {
   background-color: green; }
 
 /*# sourceMappingURL=climb-naked.css.map */
