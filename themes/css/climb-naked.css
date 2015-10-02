@@ -6,23 +6,22 @@
   float: left;
   position: relative;
   overflow: hidden;
-  margin: 0 1px 1px 0; }
-  @media (min-width: 24em) {
+  height: 400px;
+  background-color: red; }
+  .climb__tile:nth-child(even) {
+    background-color: green; }
+  @media (min-width: 18em) {
     .climb__tile {
-      width: 100%;
-      padding-bottom: 100%; } }
-  @media (min-width: 48em) {
+      width: 100%; } }
+  @media (min-width: 40em) {
     .climb__tile {
-      width: 49.5%;
-      padding-bottom: 49.5%; } }
+      width: 50%; } }
   @media (min-width: 65em) {
     .climb__tile {
-      width: 32.5%;
-      padding-bottom: 32.5%; } }
+      width: 33%; } }
   @media (min-width: 90em) {
     .climb__tile {
-      width: 24.8%;
-      padding-bottom: 24.8%; } }
+      width: 25%; } }
 
 .climb__tile__content {
   box-sizing: border-box;
@@ -34,13 +33,37 @@
   position: absolute;
   padding: 20px; }
 
-.climb__tile__media {
-  width: 100%;
+.climb__tile__image {
+  width: auto;
+  height: 100%;
+  margin-left: -50%;
+  left: 50%;
   position: absolute;
   top: 0; }
 
 .climb__tile__message {
   z-index: 1; }
+
+.climb__tile__author {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 60px;
+  padding: 5px; }
+  .climb__tile__author img {
+    border-radius: 25px;
+    width: 50px; }
+  .climb__tile__author .climb__tile__author__username {
+    display: inline-block;
+    margin-top: 17px;
+    vertical-align: top;
+    margin-left: 5px; }
+  .climb__tile__author .climb__tile__author__followers {
+    display: none; }
+
+.climb__tile__interaction {
+  position: absolute;
+  right: 0px; }
 
 .climb-wall .climb-naked {
   background-color: green; }

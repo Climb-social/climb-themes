@@ -23,30 +23,35 @@
             <li><a href="#climb-red">Red</a></li>
             <li><a href="#climb-naked">Naked Theme</a></li>
         </ol>
-        <div class="clearfix"></div>
+        <!-- <div class="clearfix"></div>
         <h2 id="climb-brooke">'climb-brooke' /css/climb-brooke.css</h2>
         <div class="climb-wall climb-brooke" data-collection-id="55c1e00845284e26681c4929" data-limit="10">
         </div>
         <div class="clearfix"></div>
         <h2 id="climb-red">'climb-red' /css/climb-red.css</h2>
         <div class="climb-wall climb-red" data-collection-id="55c1e00845284e26681c4929" data-limit="4">
-        </div>
+        </div> -->
         <div class="clearfix"></div>
         <h2 id="climb-naked">'climb-naked' /css/climb-naked.css</h2>
         <div class="climb-wall climb-naked" data-collection-id="55c1e00845284e26681c4929" data-limit="4">
         </div>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/mithril/0.2.0/mithril.min.js"></script>
-        <script type="text/javascript" src="https://rawgit.com/Climb-social/mithril-climb-wall/master/dist/bundle.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.min.js"></script>
+        <script src="//rawgit.com/Climb-social/react-climb-social/master/dist/react-climb-social.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/packery/1.4.3/packery.pkgd.min.js"></script>
         <script type="text/javascript">
-        setTimeout(function(){
-            var container = document.querySelector('.climb-brooke');
+
+        window.Climb = {
+            onUpdate: function () {
+                var container = document.querySelector('.climb-brooke');
                 var pckry = new Packery( container, {
-                // options
-                itemSelector: '.climb__tile',
-                gutter: 10
+                    // options
+                    itemSelector: '.climb__tile',
+                    gutter: 10
                 });
-            }, 2000);
+            }
+        };
+
+
         </script>
     </body>
 
