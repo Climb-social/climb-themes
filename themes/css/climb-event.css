@@ -62,21 +62,25 @@
   position: absolute;
   right: 0px; }
 
-.climb-brooke {
-  background-color: orange;
-  font-family: brandon-grotesque,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif; }
-  .climb-brooke .climb__tile {
-    padding-bottom: 0;
-    background-color: white;
-    border-radius: 5px; }
-  .climb-brooke .climb__tile__media {
-    position: relative; }
-  .climb-brooke .climb__tile__content {
-    line-height: 1.5;
-    height: auto;
-    position: relative;
-    color: grey; }
-    .climb-brooke .climb__tile__content a {
-      color: orange; }
+.climb-event .climb__tile {
+  display: none; }
+  .climb-event .climb__tile:first-child, .climb-event .climb__tile:nth-child(2) {
+    z-index: 10;
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition-duration: 0.3s; }
+  .climb-event .climb__tile:nth-child(2) {
+    transform: translate3d(100%, 0, 0); }
+  .climb-event .climb__tile.off {
+    transform: translate3d(-100%, 0, 0); }
+  .climb-event .climb__tile.on {
+    display: block;
+    transform: translate3d(0, 0, 0); }
+.climb-event .climb__tile__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
 
-/*# sourceMappingURL=climb-brooke.css.map */
+/*# sourceMappingURL=climb-event.css.map */

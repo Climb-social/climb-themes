@@ -6,10 +6,7 @@
   float: left;
   position: relative;
   overflow: hidden;
-  height: 400px;
-  background-color: red; }
-  .climb__tile:nth-child(even) {
-    background-color: green; }
+  height: 400px; }
   @media (min-width: 18em) {
     .climb__tile {
       width: 100%; } }

@@ -3,9 +3,6 @@
 
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="themes/css/climb-red.css">
-        <link rel="stylesheet" type="text/css" href="themes/css/climb-naked.css">
-        <link rel="stylesheet" type="text/css" href="themes/css/climb-brooke.css">
         <link rel="stylesheet" type="text/css" href="themes/css/climb-event.css">
         <link rel="stylesheet" type="text/css" href="https://rawgit.com/anselmh/object-fit/master/dist/polyfill.object-fit.css">
         <title>Climb Theme Demos</title>
@@ -30,6 +27,11 @@
         window.Climb = {
 
         };
+        objectFit.polyfill({
+            selector: 'img', // this can be any CSS selector
+            fittype: 'cover', // either contain, cover, fill or none
+            disableCrossDomain: 'true' // either 'true' or 'false' to not parse external CSS files.
+        });
         </script>
     </body>
 
