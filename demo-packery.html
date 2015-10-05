@@ -3,8 +3,6 @@
 
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="themes/css/climb-red.css">
-        <link rel="stylesheet" type="text/css" href="themes/css/climb-naked.css">
         <link rel="stylesheet" type="text/css" href="themes/css/climb-brooke.css">
         <title>Climb Theme Demos</title>
         <style>
@@ -18,10 +16,22 @@
     </head>
 
     <body>
-        <div class="climb-wall climb-naked" data-collection-id="55c1e00845284e26681c4929" data-limit="4">
+        <div class="climb-wall climb-brooke" data-collection-id="55c1e00845284e26681c4929" data-limit="4">
         </div>
         <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.min.js"></script>
         <script src="//rawgit.com/Climb-social/react-climb-social/master/dist/react-climb-social.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/packery/1.4.3/packery.pkgd.min.js"></script>
+        <script type="text/javascript">
+        window.Climb = {
+            onUpdate: function () {
+                var container = document.querySelector('.climb-brooke')
+                var pckry = new Packery( container, {
+                    itemSelector: '.climb__tile',
+                    gutter: 10
+                });
+            }
+        };
+        </script>
     </body>
 
 </html>

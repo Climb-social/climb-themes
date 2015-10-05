@@ -68,7 +68,8 @@
   .climb-brooke .climb__tile {
     padding-bottom: 0;
     background-color: white;
-    border-radius: 5px; }
+    border-radius: 5px;
+    min-height: 200px; }
   .climb-brooke .climb__tile__media {
     position: relative; }
   .climb-brooke .climb__tile__content {
