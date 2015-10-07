@@ -5,10 +5,11 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="themes/css/climb-event.css">
         <link rel="stylesheet" type="text/css" href="https://rawgit.com/anselmh/object-fit/master/dist/polyfill.object-fit.css">
+        <link href='https://fonts.googleapis.com/css?family=Work+Sans:500' rel='stylesheet' type='text/css'>
         <title>Climb Theme Demos</title>
         <style>
             body {
-                font-family: "futura-pt", sans-serif;
+                font-family: 'Work Sans', sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 margin: 0;
@@ -17,11 +18,11 @@
     </head>
 
     <body>
-        <div class="climb-wall climb-event" data-collection-id="55c1e00845284e26681c4929" data-limit="4">
+        <div class="climb-wall climb-event" data-collection-id="56154f4a45284e226c3b785b" data-limit="4">
         </div>
         <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.min.js"></script>
         <script src="//rawgit.com/Climb-social/react-climb-social/master/dist/react-climb-social.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/packery/1.4.3/packery.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
         <script src="https://rawgit.com/anselmh/object-fit/master/dist/polyfill.object-fit.min.js"></script>
         <script type="text/javascript">
         window.Climb = {
@@ -29,8 +30,20 @@
         };
         objectFit.polyfill({
             selector: 'img', // this can be any CSS selector
-            fittype: 'cover', // either contain, cover, fill or none
+            fittype: 'contain', // either contain, cover, fill or none
             disableCrossDomain: 'true' // either 'true' or 'false' to not parse external CSS files.
+        });
+
+        $(function() {
+            $(document).keydown(function(e) {
+                if(e.which == 37) {
+                    $($('.climb__tile')[1]).addClass('on');
+                    $($('.climb__tile')[0]).remove();
+                    return; // exit this handler for other keys
+                }
+                e.preventDefault(); // prevent the default action (scroll / move caret)
+            });
+
         });
         </script>
     </body>
