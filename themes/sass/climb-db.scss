@@ -1,0 +1,60 @@
+@import "base";
+
+.db-logo {
+    position: absolute;
+    top: 40px;
+    left: 55px;
+    width: 134px;
+    z-index: 100;
+}
+
+.db-hashtag {
+    font-family: "aktiv-grotesk";
+    position: absolute;
+    bottom: 40px;
+    right: 55px;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    z-index: 100;
+    span {
+        font-weight: 900;
+    }
+}
+
+.climb-db {
+
+    background-color: #272727;
+    color: #FFD700;
+    font-weight: bold;
+    line-height: 1.3;
+    font-family: "aktiv-grotesk";
+    a {
+        color: #FFD700;
+    }
+
+    .climb__image {
+        // z-index: 0;
+        // margin-right: -50px;
+    }
+
+    .climb__author {
+        color: white;
+        font-size: 50%;
+        margin-bottom: 10px;
+    }
+
+    .climb-slideshow__slide--has-no-image .climb-slideshow__panel, .climb-slideshow__panel {
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+        .climb__message {
+            font-size: 22.5px;
+            text-overflow: initial;
+            a {
+                max-width: 1000px;
+                overflow: visible;
+                text-overflow: initial;
+            }
+        }
+    }
+}

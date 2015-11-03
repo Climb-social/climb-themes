@@ -54,8 +54,10 @@ $animation-length: 0.30s;
     }
     .climb__tile__image {
         object-fit: contain;
+        text-align: center;
         width     : 100%;
         height    : 85%;
+        // max-width: 100%;
     }
     .climb__tile__message {
         font-size: 150%;

@@ -62,51 +62,46 @@
   position: absolute;
   right: 0px; }
 
-.climb-event a {
-  text-decoration: none;
-  color: #215cff; }
-.climb-event .climb__tile {
-  display: none; }
-  .climb-event .climb__tile:first-child, .climb-event .climb__tile:nth-child(2) {
-    z-index: 10;
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    transition-duration: 0.3s; }
-  .climb-event .climb__tile:nth-child(2) {
-    transform: translate3d(100%, 0, 0); }
-  .climb-event .climb__tile.off {
-    transform: translate3d(-100%, 0, 0); }
-  .climb-event .climb__tile.on {
-    display: block;
-    transform: translate3d(0, 0, 0); }
-.climb-event .climb__tile--has-media .climb__tile__content {
-  left: 200px;
-  height: 123px;
-  right: 0;
-  border-radius: 0;
-  bottom: 0;
-  text-align: left;
-  flex-direction: row; }
-.climb-event .climb__tile__content {
-  text-align: center;
+.db-logo {
   position: absolute;
-  height: auto;
-  width: auto;
-  left: 100px;
-  right: 100px;
-  bottom: 45%;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px; }
-.climb-event .climb__tile__image {
-  object-fit: contain;
-  text-align: center;
-  width: 100%;
-  height: 85%; }
-.climb-event .climb__tile__message {
-  font-size: 150%; }
-.climb-event .climb__tile__author {
-  bottom: 50px; }
+  top: 40px;
+  left: 55px;
+  width: 134px;
+  z-index: 100; }
 
-/*# sourceMappingURL=climb-event.css.map */
+.db-hashtag {
+  font-family: "aktiv-grotesk";
+  position: absolute;
+  bottom: 40px;
+  right: 55px;
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  z-index: 100; }
+  .db-hashtag span {
+    font-weight: 900; }
+
+.climb-db {
+  background-color: #272727;
+  color: #FFD700;
+  font-weight: bold;
+  line-height: 1.3;
+  font-family: "aktiv-grotesk"; }
+  .climb-db a {
+    color: #FFD700; }
+  .climb-db .climb__author {
+    color: white;
+    font-size: 50%;
+    margin-bottom: 10px; }
+  .climb-db .climb-slideshow__slide--has-no-image .climb-slideshow__panel, .climb-db .climb-slideshow__panel {
+    background-color: transparent;
+    box-shadow: 0px 0px 0px 0px transparent; }
+    .climb-db .climb-slideshow__slide--has-no-image .climb-slideshow__panel .climb__message, .climb-db .climb-slideshow__panel .climb__message {
+      font-size: 22.5px;
+      text-overflow: initial; }
+      .climb-db .climb-slideshow__slide--has-no-image .climb-slideshow__panel .climb__message a, .climb-db .climb-slideshow__panel .climb__message a {
+        max-width: 1000px;
+        overflow: visible;
+        text-overflow: initial; }
+
+/*# sourceMappingURL=climb-db.css.map */
